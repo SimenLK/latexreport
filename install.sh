@@ -1,22 +1,20 @@
 #!/bin/bash
 # Install script for conveniently taking out the report template and removing itself 
 
-dirname=${PWD##*/}
-
-rm README.md
-echo "Removing README.md"
+DIR=${PWD##*/}
 
 mv report.tex pre.tex ../ 
-echo "Moving the files out of $dirname"
+echo "Moving the files out of $DIR"
 
 cd .. 
-echo "Moving out of $dirname"
+echo "Moving out of $DIR"
 
-rm -rf "$dirname"
+rm -rf "$DIR"
 echo "Deleting the directory"
 
-if [ -d "$dirname" ];
+if [ -d "$DIR" ]; 
 then
-	echo "$dirname is still there!"
-	rmdir "$dirname"
+	rm -rf "$DIR"
+else
+	echo "$DIR is still there!"
 fi
