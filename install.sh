@@ -16,5 +16,5 @@ if [ -d "$DIR" ];
 then
 	rm -rf "$DIR"
 else
-	echo "$DIR is still there!"
+	echo "$DIR was succesfully removed!"
 fi
