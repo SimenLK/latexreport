@@ -1,0 +1,12 @@
+# Latex files
+
+*.aux
+*.bbl
+*.blg
+*.dvi
+*.log
+*.out
+
+# Vim files
+
+*.swp
