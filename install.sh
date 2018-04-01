@@ -3,7 +3,7 @@
 
 DIR=${PWD##*/}
 
-mv report.tex pre.tex ../ 
+mv report.tex pre.tex references.bib ../ 
 echo "Moving the files out of $DIR"
 
 cd .. 
