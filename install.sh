@@ -21,7 +21,7 @@ fi
 
 if [ -f "$REF" ]; then
     echo "References already there"
-    rm "$REF"
+    rm references.bib
 else
     echo "Moving references to $REF_DIR"
     mv references.bib $REF_DIR
