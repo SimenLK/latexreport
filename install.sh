@@ -1,9 +1,9 @@
 #!/bin/bash
 # Install script for conveniently taking out the report template and removing itself 
 
-DIR=${PWD##*/}
+DIR="latexreport"
 
-mv latexreport/report.tex latexreport/pre.tex latexreport/references.bib .
+mv $DIR/report.tex $DIR/pre.tex $DIR/references.bib .
 echo "Moving the files out of $DIR"
 
 rm -rf "$DIR"
