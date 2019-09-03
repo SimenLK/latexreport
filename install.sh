@@ -3,16 +3,13 @@
 
 DIR=${PWD##*/}
 
-mv report.tex pre.tex references.bib ../ 
+mv latexreport/report.tex latexreport/pre.tex latexreport/references.bib .
 echo "Moving the files out of $DIR"
-
-cd .. 
-echo "Moving out of $DIR"
 
 rm -rf "$DIR"
 echo "Deleting the directory"
 
-if [ -d "$DIR" ]; 
+if [ -d "$DIR" ]; 
 then
 	rm -rf "$DIR"
 else
