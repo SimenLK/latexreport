@@ -17,3 +17,6 @@ The included example reference should make the syntax clear, you can also visit
 <https://www.sharelatex.com/learn/Bibliography_management_with_bibtex>
 
 The .tex file might have to be compiled at least once with `bibtex report.tex` for it to work.
+
+Added biber to the packages, so the bibliography commands in report.tex has to
+be changed to utilize this.
