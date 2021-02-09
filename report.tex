@@ -2,68 +2,33 @@
 
 \input{pre}
 
-%%%%%%%%%%%%%%%%%%%%%%%%%
-%%%          Fill in the title details                      %%%
-
-\def \thetitle {ABC-1234 - Course name}
-\def \thesubtitle {Assignment N}
-\def \theauthor {Kandidatnummer abc123}
-\def \pagecount {3}
-
-%%%%%%%%%%%%%%%%%%%%%%%%%
-
-%\pagestyle{fancy}
-\pagestyle{fancyplain} % options: empty , plain , fancy
-\renewcommand{\headrulewidth}{1pt} % customise the layout...
-\renewcommand{\footrulewidth}{0pt}
-\lhead{\fancyplain{}{\thetitle{} -- \thesubtitle{}}}\chead{}\rhead{\fancyplain{}{\theauthor{}}}
-\lfoot{}\cfoot{Page {\thepage} of \pagecount}\rfoot{}
-
 \begin{document}
+\title {Distributed Node Data Performance}
+\author {%
+    Stine Johnsen \\
+    \begin{affiliation}
+        UiT The Arctic University of Norway
+    \end{affiliation} \\
+    \email{stine@uit.no}
+    \and
+    Ola Nordmann \\
+    \begin{affiliation}
+        UiT The Arctic University of Norway
+    \end{affiliation} \\
+    \email{ola@uit.no}
+}
 
-%%% TITLE PAGE
-
-\begin{titlepage}
-\begin{center}
-
-
-
-\textsc{\\[3.5cm] \huge University of Tromsø}\\[1.5cm]
-
-\textsc{\LARGE \thetitle}\\[0.5cm]
-
-\textsc{\Large \thesubtitle}\\[1.5cm]
-
-\LARGE{\theauthor} \\[0.5cm] \large{Department of Computer Science}
-
-
-
-\vfill
-{\large \today}
-
-\end{center}
-\thispagestyle{empty}
-\end{titlepage}
-
-\newpage{}
-
-
-%%% TABLE OF CONTENTS
-
-%\tableofcontents
-
-
-\newpage{}
+\maketitle
 
 %%% DOCUMENT BODY
 
-%%% Set counter to 1
-\setcounter{page}{1}
+\begin{abstract}
+    \blindtext
+\end{abstract}
 
 \section{Introduction}
 
-Short introduction to the assignment, motivation and expected results.
-
+\input{introduction}
 
 \subsection{Requirements}
 
@@ -91,21 +56,6 @@ basic data-structures(e.g. lists and trees).
 Figure shows how you can add figures to the report. And below is the LaTeX
 syntax for adding a figure:
 
-% Verbatim prints the text without formatting
-\begin{verbatim}
-\begin{figure}
-\begin{center}
-\fbox{\includegraphics[width=177px]
-{source.png}}
-\end{center}
-\caption{Description}\label{fig:descriptiveLabel}
-\end{figure}
-\end{verbatim}
-
-\subsection{Another section}
-
-Some more information
-
 \section{Design}
 
 How did you solve the assignment? Describe the architecture and any design
@@ -127,16 +77,10 @@ This section should contain relevant graphs and test results.
 \section{Conclusion}
 
 Sum up by restating the problem and solution. Follow up with a brief summary of
-the solution along with lessons learned.
-And testing the bibliography by citing the book \cite{robert98}.
-And this is a test for citing \cite{MOS}.
-
+the solution along with lessons learned. \cite{10.1145/2673577}
 
 %%% BIBLOGRAPHY
 
-\newpage{}
-
-\bibliographystyle{unsrt}
-\bibliography{$HOME/Documents/references}
+\printbibliography
 
 \end{document}
