@@ -6,6 +6,10 @@
 *.dvi
 *.log
 *.out
+*.bcf
+*.fdb_latexmk
+*.fls
+*.run.xml
 
 # Vim files
 
